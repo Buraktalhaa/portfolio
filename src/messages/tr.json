@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Merhaba Dünya!",
+    "subtitle": "Portfolyo projemiz başlıyor."
+  },
+  "Navigation": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  }
+}

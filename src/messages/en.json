@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": "Hello World!",
+    "subtitle": "Starting our portfolio project."
+  },
+  "Navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
