@@ -7,5 +7,20 @@
     "about": "Hakkımda",
     "projects": "Projeler",
     "contact": "İletişim"
+  },
+  "AboutPage": {
+    "title": "Hakkımda",
+    "description": "Merhaba, ben bir Bilgisayar Mühendisiyim. React Native ve modern web teknolojileriyle ilgileniyorum.",
+    "aboutInfo": "Bu, Hakkımda sayfasıdır."
+  },
+  "ContactPage": {
+    "title": "İletişim",
+    "description": "E-posta veya sosyal medya aracılığıyla benimle iletişime geçmekten çekinmeyin.",
+    "contactInfo": "Bu, İletişim sayfasıdır. İletişim bilgilerimi burada bulabilirsiniz."
+  },
+  "ProjectsPage": {
+    "title": "Projelerim",
+    "description": "Burada projelerimin bir seçkisini bulabilirsiniz.",
+    "projectsInfo": "Bu, Projeler sayfasıdır. Çalışmalarımı inceleyin!"
   }
 }

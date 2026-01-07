@@ -7,5 +7,20 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "description": "Hello, I am a Computer Engineer. I am interested in React Native and modern web technologies.",
+    "aboutInfo": "This is the About page."
+  },
+  "ContactPage": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to me via email or social media.",
+    "contactInfo": "This is the Contact page. You can find my contact information here."
+  },
+  "ProjectsPage": {
+    "title": "My Projects",
+    "description": "Here you can find a selection of my projects.",
+    "projectsInfo": "This is the Projects page. Check out my work!"
   }
 }
