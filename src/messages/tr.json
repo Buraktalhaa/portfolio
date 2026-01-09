@@ -22,5 +22,12 @@
     "title": "Projelerim",
     "description": "Burada projelerimin bir seçkisini bulabilirsiniz.",
     "projectsInfo": "Bu, Projeler sayfasıdır. Çalışmalarımı inceleyin!"
+  },
+  "Hero": {
+    "greeting": "Selam, ben Burak 👋",
+    "role": "Bilgisayar Mühendisi & Geliştirici",
+    "description": "Modern web teknolojileri ve mobil uygulamalar geliştiriyorum. Fikirleri, temiz ve ölçeklenebilir kodlarla hayata geçiriyorum.",
+    "projectsBtn": "Projelerimi Gör",
+    "contactBtn": "Benimle İletişime Geç"
   }
 }

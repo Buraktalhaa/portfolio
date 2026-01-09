@@ -22,5 +22,12 @@
     "title": "My Projects",
     "description": "Here you can find a selection of my projects.",
     "projectsInfo": "This is the Projects page. Check out my work!"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm Burak 👋",
+    "role": "Computer Engineer & Developer",
+    "description": "I build modern web technologies and mobile applications. I bring ideas to life with clean and scalable code.",
+    "projectsBtn": "View Projects",
+    "contactBtn": "Contact Me"
   }
 }
