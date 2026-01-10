@@ -26,6 +26,7 @@
   "Hero": {
     "greeting": "Hi, I'm Burak 👋",
     "role": "Computer Engineer & Developer",
+    "roleDescription": "Full Stack Developer",
     "description": "I build modern web technologies and mobile applications. I bring ideas to life with clean and scalable code.",
     "projectsBtn": "View Projects",
     "contactBtn": "Contact Me"

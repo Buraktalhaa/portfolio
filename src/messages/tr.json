@@ -26,6 +26,7 @@
   "Hero": {
     "greeting": "Selam, ben Burak 👋",
     "role": "Bilgisayar Mühendisi & Geliştirici",
+    "roleDescription": "Full Stack Geliştirici",
     "description": "Modern web teknolojileri ve mobil uygulamalar geliştiriyorum. Fikirleri, temiz ve ölçeklenebilir kodlarla hayata geçiriyorum.",
     "projectsBtn": "Projelerimi Gör",
     "contactBtn": "Benimle İletişime Geç"

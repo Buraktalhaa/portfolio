@@ -19,7 +19,8 @@ export default function Hero() {
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             {t('role')}
           </h1>
-          
+          <h3 className='text-xl font-semibold text-muted-foreground'>{t('roleDescription')}</h3>
+
           <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto md:mx-0">
             {t('description')}
           </p>
@@ -43,13 +44,13 @@ export default function Hero() {
           {/* Sosyal Medya İkonları */}
           <div className="flex gap-4 justify-center md:justify-start mt-6 text-muted-foreground">
             {/* Linkleri kendi adreslerinle değiştirmeyi unutma! */}
-            <a href="https://github.com" target="_blank" className="hover:text-primary transition-colors">
+            <a href="https://github.com/Buraktalhaa" target="_blank" className="hover:text-primary transition-colors">
               <Github className="h-6 w-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" className="hover:text-primary transition-colors">
+            <a href="https://linkedin.com/in/buraktalhamemis" target="_blank" className="hover:text-primary transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="mailto:email@example.com" className="hover:text-primary transition-colors">
+            <a href="mailto:talha@45879.com" className="hover:text-primary transition-colors">
               <Mail className="h-6 w-6" />
             </a>
           </div>
