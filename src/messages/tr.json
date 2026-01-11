@@ -30,5 +30,25 @@
     "description": "Modern web teknolojileri ve mobil uygulamalar geliştiriyorum. Fikirleri, temiz ve ölçeklenebilir kodlarla hayata geçiriyorum.",
     "projectsBtn": "Projelerimi Gör",
     "contactBtn": "Benimle İletişime Geç"
+  },
+  "Skills": {
+    "title": "Yetenekler & Teknolojiler",
+    "description": "Projelerimde aktif olarak kullandığım teknoloji yığını."
+  },
+  "FeaturedProjects": {
+    "title": "Öne Çıkan Projeler",
+    "viewAll": "Hepsini Gör",
+    "codeBtn": "Kodları İncele",
+    "demoBtn": "Canlı Önizleme",
+    "projects": {
+      "ticket": {
+        "title": "Ticket Uygulaması",
+        "description": "Kullanıcıların destek talebi oluşturabildiği full-stack bir web uygulaması. Next.js ve veritabanı yönetimi ile geliştirildi."
+      },
+      "foodRoulette": {
+        "title": "Yemek Ruleti",
+        "description": "Kararsızlar için geliştirilmiş mobil uygulama. Çarkı çevir, yemeğini seç. React Native ve Expo ile yapıldı."
+      }
+    }
   }
 }

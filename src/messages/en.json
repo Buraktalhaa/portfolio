@@ -30,5 +30,25 @@
     "description": "I build modern web technologies and mobile applications. I bring ideas to life with clean and scalable code.",
     "projectsBtn": "View Projects",
     "contactBtn": "Contact Me"
+  },
+  "Skills": {
+    "title": "Skills & Technologies",
+    "description": "The tech stack I actively use in my projects."
+  },
+  "FeaturedProjects": {
+    "title": "Featured Projects",
+    "viewAll": "View All",
+    "codeBtn": "View Code",
+    "demoBtn": "Live Demo",
+    "projects": {
+      "ticket": {
+        "title": "Ticket App",
+        "description": "A full-stack web application where users can create support tickets. Built with Next.js and database management."
+      },
+      "foodRoulette": {
+        "title": "Food Roulette",
+        "description": "Mobile app developed for the indecisive. Spin the wheel, pick your meal. Built with React Native and Expo."
+      }
+    }
   }
 }

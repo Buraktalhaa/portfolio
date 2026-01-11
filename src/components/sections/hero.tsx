@@ -7,7 +7,7 @@ export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
-    <section className="container mx-auto py-12 md:py-24 lg:py-32">
+    <section className="container mx-auto py-10 md:py-24 lg:py-32">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">
         
         {/* SOL TARA: Yazılar */}
