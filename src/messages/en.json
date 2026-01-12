@@ -10,18 +10,27 @@
   },
   "AboutPage": {
     "title": "About Me",
-    "description": "Hello, I am a Computer Engineer. I am interested in React Native and modern web technologies.",
-    "aboutInfo": "This is the About page."
-  },
-  "ContactPage": {
-    "title": "Contact Me",
-    "description": "Feel free to reach out to me via email or social media.",
-    "contactInfo": "This is the Contact page. You can find my contact information here."
+    "subtitle": "Tech enthusiast, problem solver, and a lifelong learner engineer.",
+    "bio": {
+      "title": "Who Am I?",
+      "content": "Hello! I am a Computer Engineer. I focus on software development, specifically modern web technologies and mobile applications. I enjoy solving complex problems with simple, clear, and scalable code structures."
+    },
+    "education": {
+      "title": "Education",
+      "university": "B.Sc. in Computer Engineering",
+      "desc": "Comprehensive education on Algorithms, Data Structures, Network Systems, and Software Architecture."
+    },
+    "journey": {
+      "title": "My Journey",
+      "step1": "My interest in software started during my university years.",
+      "step2": "I stepped into the modern web world with the React and Next.js ecosystem.",
+      "step3": "I am specializing in mobile app development with React Native.",
+      "current": "Currently developing full-stack projects and exploring new technologies."
+    }
   },
   "ProjectsPage": {
     "title": "My Projects",
-    "description": "Here you can find a selection of my projects.",
-    "projectsInfo": "This is the Projects page. Check out my work!"
+    "subtitle": "Turning ideas into code, and code into products. My journey in the web and mobile world."
   },
   "Hero": {
     "greeting": "Hi, I'm Burak 👋",
@@ -43,12 +52,31 @@
     "projects": {
       "ticket": {
         "title": "Ticket App",
-        "description": "A full-stack web application where users can create support tickets. Built with Next.js and database management."
+        "description": "A modern full-stack ticket management application with role-based access control, real-time features, and comprehensive user authentication."
       },
       "foodRoulette": {
         "title": "Food Roulette",
         "description": "Mobile app developed for the indecisive. Spin the wheel, pick your meal. Built with React Native and Expo."
       }
+    }
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Built with"
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind? Or just want to say hi? Fill out the form or email me directly.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "info": {
+      "emailTitle": "Email Me",
+      "socialTitle": "Social Media"
     }
   }
 }

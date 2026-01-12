@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'; // İkonlar
+import Socials from '../social';
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -9,13 +10,13 @@ export default function Hero() {
   return (
     <section className="container mx-auto py-10 md:py-24 lg:py-32">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">
-        
+
         {/* SOL TARA: Yazılar */}
         <div className="flex flex-col gap-4 text-center md:text-left">
           <h2 className="text-xl font-medium text-primary">
             {t('greeting')}
           </h2>
-          
+
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             {t('role')}
           </h1>
@@ -33,7 +34,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            
+
             <Button variant="outline" size="lg" asChild>
               <Link href="/contact">
                 {t('contactBtn')}
@@ -42,17 +43,8 @@ export default function Hero() {
           </div>
 
           {/* Sosyal Medya İkonları */}
-          <div className="flex gap-4 justify-center md:justify-start mt-6 text-muted-foreground">
-            {/* Linkleri kendi adreslerinle değiştirmeyi unutma! */}
-            <a href="https://github.com/Buraktalhaa" target="_blank" className="hover:text-primary transition-colors">
-              <Github className="h-6 w-6" />
-            </a>
-            <a href="https://linkedin.com/in/buraktalhamemis" target="_blank" className="hover:text-primary transition-colors">
-              <Linkedin className="h-6 w-6" />
-            </a>
-            <a href="mailto:talha@45879.com" className="hover:text-primary transition-colors">
-              <Mail className="h-6 w-6" />
-            </a>
+          <div className="mt-6 flex justify-center md:justify-start">
+            <Socials />
           </div>
         </div>
 

@@ -10,18 +10,27 @@
   },
   "AboutPage": {
     "title": "Hakkımda",
-    "description": "Merhaba, ben bir Bilgisayar Mühendisiyim. React Native ve modern web teknolojileriyle ilgileniyorum.",
-    "aboutInfo": "Bu, Hakkımda sayfasıdır."
-  },
-  "ContactPage": {
-    "title": "İletişim",
-    "description": "E-posta veya sosyal medya aracılığıyla benimle iletişime geçmekten çekinmeyin.",
-    "contactInfo": "Bu, İletişim sayfasıdır. İletişim bilgilerimi burada bulabilirsiniz."
+    "subtitle": "Teknoloji tutkunu, problem çözücü ve sürekli öğrenen bir mühendis.",
+    "bio": {
+      "title": "Ben Kimim?",
+      "content": "Merhaba! Ben bir Bilgisayar Mühendisiyim. Yazılım geliştirme dünyasında, özellikle modern web teknolojileri ve mobil uygulamalar üzerine yoğunlaşıyorum. Karmaşık problemleri basit, anlaşılır ve ölçeklenebilir kod yapılarıyla çözmekten keyif alıyorum."
+    },
+    "education": {
+      "title": "Eğitim",
+      "university": "Bilgisayar Mühendisliği Lisans",
+      "desc": "Algoritmalar, Veri Yapıları, Ağ Sistemleri ve Yazılım Mimarisi üzerine kapsamlı eğitim."
+    },
+    "journey": {
+      "title": "Yolculuğum",
+      "step1": "Yazılıma olan ilgim üniversite yıllarında başladı.",
+      "step2": "React ve Next.js ekosistemiyle modern web dünyasına adım attım.",
+      "step3": "React Native ile mobil uygulama geliştirme üzerine uzmanlaşıyorum.",
+      "current": "Şu anda full-stack projeler geliştiriyor ve yeni teknolojileri keşfediyorum."
+    }
   },
   "ProjectsPage": {
     "title": "Projelerim",
-    "description": "Burada projelerimin bir seçkisini bulabilirsiniz.",
-    "projectsInfo": "Bu, Projeler sayfasıdır. Çalışmalarımı inceleyin!"
+    "subtitle": "Fikirleri koda, kodu ürüne dönüştürdüğüm çalışmalarım. Web ve mobil dünyasındaki serüvenim."
   },
   "Hero": {
     "greeting": "Selam, ben Burak 👋",
@@ -43,12 +52,31 @@
     "projects": {
       "ticket": {
         "title": "Ticket Uygulaması",
-        "description": "Kullanıcıların destek talebi oluşturabildiği full-stack bir web uygulaması. Next.js ve veritabanı yönetimi ile geliştirildi."
+        "description": "Rol tabanlı erişim kontrolü, gerçek zamanlı özellikler ve kapsamlı kullanıcı kimlik doğrulaması içeren modern bir tam yığın bilet yönetimi uygulaması."
       },
       "foodRoulette": {
         "title": "Yemek Ruleti",
         "description": "Kararsızlar için geliştirilmiş mobil uygulama. Çarkı çevir, yemeğini seç. React Native ve Expo ile yapıldı."
       }
+    }
+  },
+  "Footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "madeWith": "ile geliştirildi"
+  },
+  "ContactPage": {
+    "title": "İletişime Geç",
+    "subtitle": "Bir projeniz mi var? Veya sadece merhaba demek mi istiyorsunuz? Formu doldurun veya bana doğrudan mail atın.",
+    "form": {
+      "name": "İsim Soyisim",
+      "email": "E-posta Adresi",
+      "message": "Mesajınız",
+      "submit": "Gönder",
+      "sending": "Gönderiliyor..."
+    },
+    "info": {
+      "emailTitle": "Bana Mail Atın",
+      "socialTitle": "Sosyal Medya"
     }
   }
 }
