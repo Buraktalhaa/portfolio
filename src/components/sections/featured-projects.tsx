@@ -1,73 +1,82 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from 'lucide-react';
-import { projectsData } from '@/data/projects'; // Veriyi buradan çekiyoruz
+"use client";
+
+import { useTranslations } from "next-intl";
+import { ScrollAnimation } from "@/components/ui/scroll-animation";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { Github, ExternalLink } from "lucide-react";
+import { projectsData } from "@/config/projects"; 
 
 export default function FeaturedProjects() {
-  const t = useTranslations('FeaturedProjects');
-
-  // Sadece "featured: true" olanları filtrele
-  const featuredProjects = projectsData.filter(p => p.featured);
+  const t = useTranslations("Projects");
 
   return (
-    <section className="container mx-auto py-12">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-          {t('title')}
-        </h2>
-        <Button variant="ghost" asChild className="hidden md:flex">
-          <Link href="/projects">
-            {t('viewAll')} <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </div>
+    <section id="projects" className="container mx-auto px-4 py-20">
+      <ScrollAnimation>
+        {/* Başlık ve Alt Başlık */}
+        <SectionHeading 
+          title={t("title")} 
+          subtitle={t("subtitle")}
+        />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {featuredProjects.map((project) => (
-          <Card key={project.id} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-            <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center text-white text-5xl`}>
-              {project.emoji}
-            </div>
-            
-            <CardHeader>
-              <CardTitle>{t(`projects.${project.id}.title`)}</CardTitle>
-              <CardDescription className="mt-2 line-clamp-2">
-                {t(`projects.${project.id}.description`)}
-              </CardDescription>
-            </CardHeader>
-            
-            <CardContent className="flex-grow">
-              <div className="flex flex-wrap gap-2">
-                {project.techStack.map((tech) => (
-                  <Badge key={tech} variant="default">
-                    {tech}
-                  </Badge>
-                ))}
+        {/* Proje Listesi */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projectsData.map((project, index) => (
+            <div 
+              key={index}
+              className="group relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 hover:border-purple-500/50 transition-all duration-300 flex flex-col"
+            >
+              {/* 1. Proje İkonu / Kapak */}
+              <div className="h-48 bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center border-b border-slate-800 group-hover:from-slate-900 group-hover:to-purple-900/20 transition-all">
+                 <div className="p-4 bg-slate-950 rounded-full border border-slate-700 shadow-xl group-hover:scale-110 group-hover:border-purple-500/50 transition-transform duration-300">
+                    {project.icon}
+                 </div>
               </div>
-            </CardContent>
-            
-            <CardFooter className="gap-2">
-              <Button variant="default" className="w-full" asChild>
-                <a href={project.githubLink} target="_blank" rel="noreferrer">
-                  <Github className="mr-2 h-4 w-4" /> 
-                  {t('codeBtn')}
-                </a>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
 
-      <div className="mt-8 flex justify-center md:hidden">
-        <Button variant="outline" asChild>
-          <Link href="/projects">
-            {t('viewAll')}
-          </Link>
-        </Button>
-      </div>
+              {/* 2. Proje Detayları */}
+              <div className="p-6 flex flex-col flex-grow">
+                {/* Başlık (Çeviriden gelir) */}
+                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                    {t(`${project.id}.title`)}
+                </h3>
+                
+                {/* Açıklama (Çeviriden gelir) */}
+                <p className="text-slate-400 mb-6 line-clamp-3">
+                    {t(`${project.id}.desc`)}
+                </p>
+
+                {/* Etiketler (Config'den gelir) */}
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="text-xs font-mono text-purple-300 bg-purple-900/20 px-2 py-1 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Linkler ve Butonlar */}
+                <div className="flex gap-4 pt-4 border-t border-slate-800">
+                    <a 
+                      href={project.links.github} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                    >
+                        <Github className="w-4 h-4" /> {t("buttons.code")}
+                    </a>
+                    <a 
+                      href={project.links.live} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                    >
+                        <ExternalLink className="w-4 h-4" /> {t("buttons.live")}
+                    </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </ScrollAnimation>
     </section>
   );
 }
