@@ -7,13 +7,9 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Header from "../../components/header";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/sections/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Portfolyo",
-  description: "Kişisel Portfolyo Sitesi",
-};
 
 export default async function RootLayout({
   children,
@@ -31,27 +27,23 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      {/* DEĞİŞİKLİK BURADA: 
-          1. bg-slate-50: Arka planı hafif gri yapar.
-          2. antialiased: Yazıların daha keskin görünmesini sağlar.
-      */}
-      <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+    <html lang={locale} className="dark">
+      <body className={`${inter.className} antialiased min-h-screen`}>        <NextIntlClientProvider messages={messages}>
 
-          <div className="flex min-h-screen flex-col">
-            {/* Header'ın arkası beyaz kalsın istiyorsan Header bileşeninde bg-white olduğundan emin olmalısın */}
-            <Header />
+        <div className="flex min-h-screen flex-col">
+          <Header />
 
-            <div className="flex-1">
-              {children}
-            </div>
-
-            <Footer />
-
+          <div className="flex-1">
+            {children}
           </div>
 
-        </NextIntlClientProvider>
+          <Footer />
+
+          <ScrollToTop />
+
+        </div>
+
+      </NextIntlClientProvider>
       </body>
     </html>
   );
