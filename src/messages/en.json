@@ -1,82 +1,141 @@
 {
-  "HomePage": {
-    "title": "Hello World!",
-    "subtitle": "Starting our portfolio project."
-  },
-  "Navigation": {
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "AboutPage": {
-    "title": "About Me",
-    "subtitle": "Tech enthusiast, problem solver, and a lifelong learner engineer.",
-    "bio": {
-      "title": "Who Am I?",
-      "content": "Hello! I am a Computer Engineer. I focus on software development, specifically modern web technologies and mobile applications. I enjoy solving complex problems with simple, clear, and scalable code structures."
-    },
-    "education": {
-      "title": "Education",
-      "university": "B.Sc. in Computer Engineering",
-      "desc": "Comprehensive education on Algorithms, Data Structures, Network Systems, and Software Architecture."
-    },
-    "journey": {
-      "title": "My Journey",
-      "step1": "My interest in software started during my university years.",
-      "step2": "I stepped into the modern web world with the React and Next.js ecosystem.",
-      "step3": "I am specializing in mobile app development with React Native.",
-      "current": "Currently developing full-stack projects and exploring new technologies."
-    }
-  },
-  "ProjectsPage": {
-    "title": "My Projects",
-    "subtitle": "Turning ideas into code, and code into products. My journey in the web and mobile world."
-  },
   "Hero": {
-    "greeting": "Hi, I'm Burak 👋",
-    "role": "Computer Engineer & Developer",
-    "roleDescription": "Full Stack Developer",
-    "description": "I build modern web technologies and mobile applications. I bring ideas to life with clean and scalable code.",
+    "title": "Burak Talha",
+    "subtitle": "Computer Engineer | Full Stack & Mobile Developer",
+    "description": "I focus on software development, specifically modern web technologies and mobile applications. I enjoy solving complex problems with simple, clear, and scalable code structures.",
     "projectsBtn": "View Projects",
-    "contactBtn": "Contact Me"
+    "downloadBtn": "Download CV"
   },
   "Skills": {
-    "title": "Skills & Technologies",
-    "description": "The tech stack I actively use in my projects."
+    "title": "Technical Skills",
+    "subtitle": "A comprehensive tech stack for building modern web and mobile applications.",
+    "categories": {
+      "programming": "Programming Languages",
+      "software": "Software Architecture & Fundamentals",
+      "web": "Web & Mobile Technologies",
+      "database": "Databases & Cloud",
+      "tools": "Tools & DevOps"
+    }
   },
-  "FeaturedProjects": {
+  "Projects": {
     "title": "Featured Projects",
-    "viewAll": "View All",
-    "codeBtn": "View Code",
-    "demoBtn": "Live Demo",
-    "projects": {
-      "ticket": {
-        "title": "Ticket App",
-        "description": "A modern full-stack ticket management application with role-based access control, real-time features, and comprehensive user authentication."
-      },
-      "foodRoulette": {
-        "title": "Food Roulette",
-        "description": "Mobile app developed for the indecisive. Spin the wheel, pick your meal. Built with React Native and Expo."
-      }
+    "subtitle": "Modern tech stack I use to build web and mobile applications.",
+    "ticketApp": {
+      "title": "Ticket App",
+      "desc": "Full-stack ticket management system with RBAC, real-time updates, and secure authentication. Built with Node.js, Express.js, and Angular."
+    },
+    "foodRoulette": {
+      "title": "Food Roulette",
+      "desc": "Mobile app developed for the indecisive. Spin the wheel to pick a meal randomly. Built with React Native and Expo."
+    },
+    "okuyarakOgren": {
+      "title": "OkuyarakÖğren (TÜBİTAK AI Project)",
+      "desc": "TÜBİTAK 2209-A supported AI-powered chatbot platform developed for Turkish programming education. Custom dataset design and end-to-end LLM integration."
+    },
+    "buttons": {
+      "code": "View Code",
+      "live": "Live Project"
     }
   },
   "Footer": {
     "rights": "All rights reserved.",
-    "madeWith": "Built with"
+    "madeWith": "Built by"
   },
-  "ContactPage": {
-    "title": "Get in Touch",
-    "subtitle": "Have a project in mind? Or just want to say hi? Fill out the form or email me directly.",
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "message": "Your Message",
-      "submit": "Send Message",
-      "sending": "Sending..."
+  "Navigation": {
+    "skills": "Skills",
+    "experience": "Experiences",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "Education": {
+    "title": "Education & Certifications",
+    "subtitle": "My academic background and professional continuous learning.",
+    "degree": {
+      "school": "Manisa Celal Bayar University",
+      "department": "Computer Engineering",
+      "date": "2020 - 2025",
+      "gpa": "GPA: 3.34/4.00"
     },
-    "info": {
-      "emailTitle": "Email Me",
-      "socialTitle": "Social Media"
+    "highlights": {
+      "title": "Highlights",
+      "items": {
+        "item1": "Smile Hair Clinic AI Hackathon 2nd Place 🏆 (AI-Powered Video Generation)",
+        "item2": "TÜBİTAK 2209-A Project Coordinator (AI-Powered Education Platform)",
+        "item3": "Graduated with Honor Degree: 3.34 GPA"
+      }
+    },
+    "certificationsTitle": "Certifications",
+    "coursesTitle": "Key Courses",
+    "certificationsList": {
+      "savunma401": {
+        "name": "Defense Industry 401 (Grade: BA)",
+        "issuer": "Presidency of Defense Industries & YÖK",
+        "date": "2025"
+      },
+      "borusan": {
+        "name": "Borusan Technology School (AI & Automotive)",
+        "issuer": "Borusan & Toptalent",
+        "date": "2024"
+      }
+    },
+    "internationalTitle": "International Experience",
+    "international": {
+      "wat": {
+        "title": "Work and Travel USA",
+        "desc": "4 months of international work experience in the USA. Active English usage and teamwork in a multicultural environment.",
+        "location": "USA",
+        "date": "2023"
+      }
+    },
+    "coursesList": [
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Computer Networks",
+      "Database Management"
+    ]
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's collaborate on your next project.",
+    "infoTitle": "Contact Information",
+    "openToWork": {
+      "title": "Open to Opportunities",
+      "text": "I am currently seeking full-time opportunities in Computer Engineering, Full Stack Development, or Mobile Apps."
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message...",
+      "btn": "Send Message"
+    }
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "subtitle": "My internship and work experience throughout my software development career.",
+    "jobs": {
+      "neg": {
+        "role": "Volunteer Software Engineer",
+        "company": "Neg Technology",
+        "date": "July 2025 - Present",
+        "desc": "Developed a Human Resources management system using Java and Spring Boot. Designed backend architecture including role-based access control (RBAC) and core business logic. Contributed to the frontend by building reusable React components, supporting the completion of the user interface.",
+        "tech": ["Java", "Spring Boot", "PostgreSQL", "React", "GitLab"]
+      },
+      "titraLong": {
+        "role": "Software Engineer (Workplace Training Program)",
+        "company": "Titra Technology",
+        "date": "February 2025 - June 2025",
+        "desc": "Developed a real-time messaging application using Node.js and WebSocket. Built dynamic and modular frontend components with Angular. As part of the Workplace Training Program, worked full-time (5 days/week) for 4 months, actively participating in development processes alongside software engineers. Implemented real-time UAV data streaming via WebSocket.",
+        "tech": ["Node.js", "TypeScript", "WebSocket", "PostgreSQL", "Angular"]
+      },
+      "titraShort": {
+        "role": "Software Engineer Intern",
+        "company": "Titra Technology",
+        "date": "June 2024 - July 2024",
+        "desc": "Worked on JavaScript and Node.js fundamentals while contributing to full-stack projects. Supported frontend and backend development processes by participating in the implementation of core application functionalities.",
+        "tech": ["JavaScript", "Node.js", "CSS", "Full Stack"]
+      }
     }
   }
 }

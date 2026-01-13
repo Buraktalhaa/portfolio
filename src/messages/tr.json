@@ -1,82 +1,141 @@
 {
-  "HomePage": {
-    "title": "Merhaba Dünya!",
-    "subtitle": "Portfolyo projemiz başlıyor."
-  },
-  "Navigation": {
-    "about": "Hakkımda",
-    "projects": "Projeler",
-    "contact": "İletişim"
-  },
-  "AboutPage": {
-    "title": "Hakkımda",
-    "subtitle": "Teknoloji tutkunu, problem çözücü ve sürekli öğrenen bir mühendis.",
-    "bio": {
-      "title": "Ben Kimim?",
-      "content": "Merhaba! Ben bir Bilgisayar Mühendisiyim. Yazılım geliştirme dünyasında, özellikle modern web teknolojileri ve mobil uygulamalar üzerine yoğunlaşıyorum. Karmaşık problemleri basit, anlaşılır ve ölçeklenebilir kod yapılarıyla çözmekten keyif alıyorum."
-    },
-    "education": {
-      "title": "Eğitim",
-      "university": "Bilgisayar Mühendisliği Lisans",
-      "desc": "Algoritmalar, Veri Yapıları, Ağ Sistemleri ve Yazılım Mimarisi üzerine kapsamlı eğitim."
-    },
-    "journey": {
-      "title": "Yolculuğum",
-      "step1": "Yazılıma olan ilgim üniversite yıllarında başladı.",
-      "step2": "React ve Next.js ekosistemiyle modern web dünyasına adım attım.",
-      "step3": "React Native ile mobil uygulama geliştirme üzerine uzmanlaşıyorum.",
-      "current": "Şu anda full-stack projeler geliştiriyor ve yeni teknolojileri keşfediyorum."
-    }
-  },
-  "ProjectsPage": {
-    "title": "Projelerim",
-    "subtitle": "Fikirleri koda, kodu ürüne dönüştürdüğüm çalışmalarım. Web ve mobil dünyasındaki serüvenim."
-  },
   "Hero": {
-    "greeting": "Selam, ben Burak 👋",
-    "role": "Bilgisayar Mühendisi & Geliştirici",
-    "roleDescription": "Full Stack Geliştirici",
-    "description": "Modern web teknolojileri ve mobil uygulamalar geliştiriyorum. Fikirleri, temiz ve ölçeklenebilir kodlarla hayata geçiriyorum.",
-    "projectsBtn": "Projelerimi Gör",
-    "contactBtn": "Benimle İletişime Geç"
+    "title": "Burak Talha",
+    "subtitle": "Bilgisayar Mühendisi | Full Stack & Mobil Geliştirici",
+    "description": "Yazılım geliştirmeye, özellikle modern web teknolojilerine ve mobil uygulamalara odaklanıyorum. Karmaşık problemleri basit, net ve ölçeklenebilir kod yapılarıyla çözmekten keyif alıyorum.",
+    "projectsBtn": "Projeleri Gör",
+    "downloadBtn": "CV İndir"
   },
   "Skills": {
-    "title": "Yetenekler & Teknolojiler",
-    "description": "Projelerimde aktif olarak kullandığım teknoloji yığını."
+    "title": "Teknik Yetenekler",
+    "subtitle": "Modern web ve mobil uygulamalar geliştirmek için kullandığım güncel teknoloji yığını.",
+    "categories": {
+      "programming": "Programlama Dilleri",
+      "software": "Yazılım Mimarisi & Temeller",
+      "web": "Web & Mobil Teknolojiler",
+      "database": "Veritabanı & Bulut",
+      "tools": "Araçlar & DevOps"
+    }
   },
-  "FeaturedProjects": {
+  "Projects": {
     "title": "Öne Çıkan Projeler",
-    "viewAll": "Hepsini Gör",
-    "codeBtn": "Kodları İncele",
-    "demoBtn": "Canlı Önizleme",
-    "projects": {
-      "ticket": {
-        "title": "Ticket Uygulaması",
-        "description": "Rol tabanlı erişim kontrolü, gerçek zamanlı özellikler ve kapsamlı kullanıcı kimlik doğrulaması içeren modern bir tam yığın bilet yönetimi uygulaması."
-      },
-      "foodRoulette": {
-        "title": "Yemek Ruleti",
-        "description": "Kararsızlar için geliştirilmiş mobil uygulama. Çarkı çevir, yemeğini seç. React Native ve Expo ile yapıldı."
-      }
+    "subtitle": "Modern web ve mobil uygulamalar geliştirmek için kullandığım güncel teknoloji yığını.",
+    "ticketApp": {
+      "title": "Bilet Yönetim Sistemi",
+      "desc": "Rol tabanlı erişim kontrolü, gerçek zamanlı güncellemeler ve güvenli kimlik doğrulama içeren tam kapsamlı bilet yönetim uygulaması.Node.js ve Express js ve Angular ile geliştirildi."
+    },
+    "foodRoulette": {
+      "title": "Yemek Ruleti",
+      "desc": "Kararsızlar için geliştirilmiş mobil uygulama. Çarkı çevir, yemeğini seç. React Native ve Expo ile yapıldı."
+    },
+    "okuyarakOgren": {
+      "title": "OkuyarakÖğren (TÜBİTAK AI Projesi)",
+      "desc": "TÜBİTAK 2209-A destekli, Türkçe yazılım eğitimi için geliştirilmiş yapay zeka tabanlı chatbot platformu. Özel veri seti tasarımı ve uçtan uca LLM entegrasyonu."
+    },
+    "buttons": {
+      "code": "Kodları İncele",
+      "live": "Canlı Proje"
     }
   },
   "Footer": {
     "rights": "Tüm hakları saklıdır.",
-    "madeWith": "ile geliştirildi"
+    "madeWith": "Geliştirici:"
   },
-  "ContactPage": {
-    "title": "İletişime Geç",
-    "subtitle": "Bir projeniz mi var? Veya sadece merhaba demek mi istiyorsunuz? Formu doldurun veya bana doğrudan mail atın.",
-    "form": {
-      "name": "İsim Soyisim",
-      "email": "E-posta Adresi",
-      "message": "Mesajınız",
-      "submit": "Gönder",
-      "sending": "Gönderiliyor..."
+  "Navigation": {
+    "skills": "Yetenekler",
+    "experience": "Deneyimler",
+    "projects": "Projeler",
+    "education": "Eğitim",
+    "contact": "İletişim"
+  },
+  "Education": {
+    "title": "Eğitim & Sertifikalar",
+    "subtitle": "Akademik geçmişim ve profesyonel gelişim yolculuğum.",
+    "degree": {
+      "school": "Manisa Celal Bayar Üniversitesi",
+      "department": "Bilgisayar Mühendisliği",
+      "date": "2020 - 2025",
+      "gpa": "GNO: 3.34/4.00"
     },
-    "info": {
-      "emailTitle": "Bana Mail Atın",
-      "socialTitle": "Sosyal Medya"
+    "highlights": {
+      "title": "Akademik Başarılar",
+      "items": {
+        "item1": "Smile Hair Clinic AI Hackathon 2.liği 🏆 (Yapay Zeka Destekli Video Üretimi)",
+        "item2": "TÜBİTAK 2209-A Proje Yürütücüsü (Yapay Zeka Destekli Eğitim Platformu)",
+        "item3": "3.34 Ortalama ile Onur Derecesi Mezunu"
+      }
+    },
+    "certificationsTitle": "Sertifikalar",
+    "coursesTitle": "Alınan Kilit Dersler",
+    "certificationsList": {
+      "savunma401": {
+        "name": "Savunma Sanayii 401 (Başarı Notu: BA)",
+        "issuer": "T.C. Cumhurbaşkanlığı SSB & YÖK",
+        "date": "2025"
+      },
+      "borusan": {
+        "name": "Borusan Teknoloji Okulu (Yapay Zeka & Otomotiv)",
+        "issuer": "Borusan & Toptalent",
+        "date": "2024"
+      }
+    },
+    "internationalTitle": "Uluslararası Deneyim",
+    "international": {
+      "wat": {
+        "title": "Work and Travel USA",
+        "desc": "ABD'de 4 aylık uluslararası çalışma deneyimi. Çok kültürlü ortamda aktif İngilizce kullanımı ve takım çalışması.",
+        "location": "ABD",
+        "date": "2023"
+      }
+    },
+    "coursesList": [
+      "Veri Yapıları",
+      "Algoritmalar",
+      "İşletim Sistemleri",
+      "Bilgisayar Ağları",
+      "Veritabanı Yönetimi"
+    ]
+  },
+  "Contact": {
+    "title": "İletişime Geç",
+    "subtitle": "Projeleriniz veya iş fırsatları için benimle irtibata geçebilirsiniz.",
+    "infoTitle": "İletişim Bilgileri",
+    "openToWork": {
+      "title": "Yeni Fırsatlara Açığım",
+      "text": "Şu anda Bilgisayar Mühendisliği, Full Stack Geliştirme veya Mobil Uygulama alanlarında tam zamanlı fırsatları değerlendiriyorum."
+    },
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "message": "Mesajınız...",
+      "btn": "Mesaj Gönder"
+    }
+  },
+  "Experience": {
+    "title": "Profesyonel Deneyim",
+    "subtitle": "Yazılım geliştirme kariyerimdeki staj ve çalışma geçmişim.",
+    "jobs": {
+      "neg": {
+        "role": "Gönüllü Yazılım Mühendisi",
+        "company": "Neg Teknoloji",
+        "date": "Temmuz 2025 - Günümüz",
+        "desc": "Java ve Spring Boot kullanarak İnsan Kaynakları yönetim sistemi geliştirdim. Rol tabanlı erişim kontrolü (RBAC) ve temel iş kurallarını içeren backend mimarisini tasarladım. Frontend tarafında React ile yeniden kullanılabilir bileşenler geliştirerek kullanıcı arayüzünün tamamlanmasına katkı sağladım.",
+        "tech": ["Java", "Spring Boot", "PostgreSQL", "React", "GitLab"]
+      },
+      "titraLong": {
+        "role": "Yazılım Mühendisi (İşletmede Mesleki Eğitim)",
+        "company": "Titra Teknoloji",
+        "date": "Şubat 2025 - Haziran 2025",
+        "desc": "Node.js ve WebSocket kullanarak gerçek zamanlı bir mesajlaşma uygulaması geliştirdim. Frontend tarafında Angular ile dinamik ve modüler bileşenler geliştirdim. İşletmede Mesleki Eğitim dersi kapsamında, haftada 5 gün aktif geliştirme süreçlerine dahil olarak 4 ay boyunca tam zamanlı çalışma düzeninde yazılım mühendisleriyle birlikte çalıştım. İHA verilerinin WebSocket üzerinden canlı aktarımını sağladım.",
+        "tech": ["Node.js", "TypeScript", "WebSocket", "PostgreSQL", "Angular"]
+      },
+      "titraShort": {
+        "role": "Yazılım Mühendisi Stajyeri",
+        "company": "Titra Teknoloji",
+        "date": "Haziran 2024 - Temmuz 2024",
+        "desc": "JavaScript ve Node.js temelleri üzerine çalışarak full-stack projelerde görev aldım. Frontend ve backend geliştirme süreçlerine katkı sağlayarak uygulamaların temel işlevlerinin oluşturulmasında yer aldım.",
+        "tech": ["JavaScript", "Node.js", "CSS", "Full Stack"]
+      }
     }
   }
 }
