@@ -48,22 +48,28 @@
     "education": "Eğitim",
     "contact": "İletişim"
   },
-  "Education": {
+"Education": {
     "title": "Eğitim & Sertifikalar",
     "subtitle": "Akademik geçmişim ve profesyonel gelişim yolculuğum.",
     "degree": {
       "school": "Manisa Celal Bayar Üniversitesi",
       "department": "Bilgisayar Mühendisliği",
       "date": "2020 - 2025",
-      "gpa": "GNO: 3.34/4.00"
+      "gpa": "GNO: 3.34/4.00",
+      "badge": "3.34 Ort. ile Onur Derecesi 🎓"
     },
-    "highlights": {
-      "title": "Akademik Başarılar",
-      "items": {
-        "item1": "Smile Hair Clinic AI Hackathon 2.liği 🏆 (Yapay Zeka Destekli Video Üretimi)",
-        "item2": "TÜBİTAK 2209-A Proje Yürütücüsü (Yapay Zeka Destekli Eğitim Platformu)",
-        "item3": "3.34 Ortalama ile Onur Derecesi Mezunu"
-      }
+    "hackathon": {
+      "title": "Hackathon 2.liği 🏆",
+      "subtitle": "Smile Hair Clinic AI",
+      "desc": "Yapay zeka destekli video üretimi projesi ile 2.lik ödülü.",
+      "btn": "Repoyu İncele"
+    },
+    "tubitak": {
+      "title": "TÜBİTAK Proje Lideri 🔬",
+      "subtitle": "2209-A Destek Programı",
+      "desc": "Yapay zeka tabanlı eğitim platformunu (OkuyarakÖğren) uçtan uca yönettim.",
+      "btnCode": "Repo",
+      "btnLive": "Canlı"
     },
     "certificationsTitle": "Sertifikalar",
     "coursesTitle": "Alınan Kilit Dersler",
@@ -71,12 +77,14 @@
       "savunma401": {
         "name": "Savunma Sanayii 401 (Başarı Notu: BA)",
         "issuer": "T.C. Cumhurbaşkanlığı SSB & YÖK",
-        "date": "2025"
+        "date": "2025",
+        "url": "/certs/savunma-sanayii-401.pdf"
       },
       "borusan": {
         "name": "Borusan Teknoloji Okulu (Yapay Zeka & Otomotiv)",
         "issuer": "Borusan & Toptalent",
-        "date": "2024"
+        "date": "2024",
+        "url": "/certs/borusan-teknoloji.pdf"
       }
     },
     "internationalTitle": "Uluslararası Deneyim",

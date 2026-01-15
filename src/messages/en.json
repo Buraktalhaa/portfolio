@@ -48,22 +48,28 @@
     "education": "Education",
     "contact": "Contact"
   },
-  "Education": {
+"Education": {
     "title": "Education & Certifications",
     "subtitle": "My academic background and professional continuous learning.",
     "degree": {
       "school": "Manisa Celal Bayar University",
       "department": "Computer Engineering",
       "date": "2020 - 2025",
-      "gpa": "GPA: 3.34/4.00"
+      "gpa": "GPA: 3.34/4.00",
+      "badge": "Honor Degree (GPA: 3.34) 🎓"
     },
-    "highlights": {
-      "title": "Highlights",
-      "items": {
-        "item1": "Smile Hair Clinic AI Hackathon 2nd Place 🏆 (AI-Powered Video Generation)",
-        "item2": "TÜBİTAK 2209-A Project Coordinator (AI-Powered Education Platform)",
-        "item3": "Graduated with Honor Degree: 3.34 GPA"
-      }
+    "hackathon": {
+      "title": "Hackathon 2nd Place 🏆",
+      "subtitle": "Smile Hair Clinic AI",
+      "desc": "Won 2nd place with AI-powered video generation project.",
+      "btn": "View Repo"
+    },
+    "tubitak": {
+      "title": "TÜBİTAK Project Lead 🔬",
+      "subtitle": "2209-A Research Grant",
+      "desc": "Led the end-to-end development of an AI-based education platform.",
+      "btnCode": "Repo",
+      "btnLive": "Live"
     },
     "certificationsTitle": "Certifications",
     "coursesTitle": "Key Courses",
@@ -71,12 +77,14 @@
       "savunma401": {
         "name": "Defense Industry 401 (Grade: BA)",
         "issuer": "Presidency of Defense Industries & YÖK",
-        "date": "2025"
+        "date": "2025",
+        "url": "/certs/savunma-sanayii-401.pdf"
       },
       "borusan": {
         "name": "Borusan Technology School (AI & Automotive)",
         "issuer": "Borusan & Toptalent",
-        "date": "2024"
+        "date": "2024",
+        "url": "/certs/borusan-teknoloji.pdf"
       }
     },
     "internationalTitle": "International Experience",
