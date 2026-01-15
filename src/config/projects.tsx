@@ -6,7 +6,6 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     links: { 
       github: "https://github.com/Buraktalhaa", // Buraya gerçek linklerini koyarsın
-      live: "https://ticket-app-demo.com" 
     },
     icon: <Ticket className="w-12 h-12 text-purple-500" />,
   },
@@ -15,7 +14,6 @@ export const projectsData = [
     tags: ["React Native", "Expo", "JavaScript", "Mobile Development"],
     links: { 
       github: "https://github.com/Buraktalhaa", 
-      live: "#" 
     },
     icon: <Pizza className="w-12 h-12 text-orange-500" />,
   },

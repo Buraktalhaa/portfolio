@@ -8,7 +8,6 @@ import { Briefcase, Calendar } from "lucide-react";
 export default function Experience() {
   const t = useTranslations("Experience");
 
-  // JSON anahtarlarını sırasıyla tanımlıyoruz (En yeniden eskiye)
   const jobs = ["neg", "titraLong", "titraShort"] as const;
 
   return (

@@ -3,77 +3,78 @@
 import { useTranslations } from "next-intl";
 import { ScrollAnimation } from "@/components/ui/scroll-animation";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { Code2, Terminal, Globe, Database, Layers } from "lucide-react";
+import { mainSkills, subSkills } from "@/config/skills";
 
 export default function Skills() {
   const t = useTranslations("Skills");
 
-  // Veri yapısı: Başlıkları çeviriden (t) alıyoruz, teknik terimler (React, Python) sabit kalıyor.
-  const skillCategories = [
-    {
-      title: t("categories.programming"),
-      icon: <Code2 className="w-8 h-8 text-blue-400" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
-    },
-    {
-      title: t("categories.web"),
-      icon: <Globe className="w-8 h-8 text-orange-400" />,
-      skills: ["React", "Angular", "Nest.js", "Next.js", "React Native", "Expo", "Tailwind CSS", "HTML", "CSS"],
-    },
-    {
-      title: t("categories.software"),
-      icon: <Terminal className="w-8 h-8 text-green-400" />,
-      skills: ["OOP", "Solid", "REST API", "Data Structures", "Algorithms", "Design Patterns", "Clean Code", "MVC", "Microservices"],
-    },
-    {
-      title: t("categories.database"),
-      icon: <Database className="w-8 h-8 text-cyan-400" />,
-      skills: ["SQL", "PostgreSQL", "MongoDB", "Prisma", "Firebase"],
-    },
-    {
-      title: t("categories.tools"),
-      icon: <Layers className="w-8 h-8 text-pink-400" />,
-      skills: ["Git", "GitHub", "Docker", "VS Code", "Postman", "Figma", "Jira", "Slack", "GitLab"],
-    },
-  ];
-
   return (
     <section id="skills" className="container mx-auto px-4 py-20">
       <ScrollAnimation>
-        {/* Başlık ve Alt Başlık (Çeviriden Geliyor) */}
         <SectionHeading 
           title={t("title")} 
           subtitle={t("subtitle")}
         />
 
-        {/* Kartlar Izgarası */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => (
-            <div 
-              key={index} 
-              className="group p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 hover:bg-slate-900 hover:shadow-[0_0_20px_rgba(124,58,237,0.1)] transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-lg bg-slate-950 border border-slate-800 group-hover:scale-110 transition-transform duration-300">
-                  {category.icon}
+        <div className="flex flex-col gap-6">
+          
+          {/* ÜST SATIR: 2 BÜYÜK KART (50% - 50%) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {mainSkills.map((category) => (
+              <div 
+                key={category.id} 
+                className="group p-8 rounded-3xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/30 hover:bg-slate-900 transition-all duration-300 relative overflow-hidden"
+              >
+                <div className={`absolute top-0 right-0 w-32 h-32 bg-${category.color}-500/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-${category.color}-500/10 transition-all`}></div>
+
+                <div className="flex items-center gap-4 mb-6 relative z-10">
+                  <div className={`p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:scale-110 transition-transform duration-300`}>
+                    {category.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-200">{t(`categories.${category.id}`)}</h3>
                 </div>
-                {/* Kategori Başlığı */}
-                <h3 className="text-xl font-semibold text-slate-200">{category.title}</h3>
+                
+                <div className="flex flex-wrap gap-2 relative z-10">
+                  {category.skills.map((skill, i) => (
+                    <span 
+                      key={i} 
+                      className="px-3 py-1.5 text-sm font-medium rounded-lg bg-slate-950 text-slate-300 border border-slate-800 group-hover:border-slate-700 group-hover:text-white transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              
-              {/* Yetenek Etiketleri */}
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, i) => (
-                  <span 
-                    key={i} 
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-slate-800/50 text-slate-300 border border-slate-700/50 group-hover:border-purple-500/30 group-hover:text-purple-200 transition-colors"
-                  >
-                    {skill}
-                  </span>
-                ))}
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {subSkills.map((category) => (
+              <div 
+                key={category.id} 
+                className="group p-6 rounded-3xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/30 hover:bg-slate-900 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="p-2.5 rounded-lg bg-slate-950 border border-slate-800 group-hover:scale-110 transition-transform duration-300">
+                    {category.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-200">{t(`categories.${category.id}`)}</h3>
+                </div>
+                
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, i) => (
+                    <span 
+                      key={i} 
+                      className="px-2.5 py-1 text-xs font-medium rounded-md bg-slate-950 text-slate-400 border border-slate-800 group-hover:border-slate-700 group-hover:text-slate-200 transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
       </ScrollAnimation>
     </section>

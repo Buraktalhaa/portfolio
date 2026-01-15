@@ -11,7 +11,6 @@ export default function Contact() {
 
   return (
     <section id="contact" className="container mx-auto px-4 py-20 mb-20 relative">
-      {/* Arkaplan Işıltısı */}
       <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-purple-900/10 to-transparent -z-10 pointer-events-none" />
 
       <ScrollAnimation>
@@ -88,7 +87,6 @@ export default function Contact() {
   );
 }
 
-// Kart Bileşeni
 function ContactCard({ icon, label, value, href, color }: any) {
   return (
     <a href={href} className="group flex items-center gap-4 p-4 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 hover:bg-slate-800 transition-all duration-300">
