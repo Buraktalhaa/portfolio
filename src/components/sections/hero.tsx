@@ -1,7 +1,15 @@
+"use client";
+
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -10,21 +18,21 @@ export default function Hero() {
     <section className="relative flex flex-col items-center justify-center text-center px-4 min-h-[calc(100vh-4rem)] overflow-hidden">
       
       {/* 1. ÜSTTEKİ YUVARLAK AVATAR/İKON */}
-      <div className="relative mb-8 mt-[-50px]"> {/* mt-[-50px] ile optik olarak merkeze aldık */}
+      <div className="relative mb-8 mt-[-50px]">
         <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 blur opacity-75 animate-pulse"></div>
         <div className="relative h-24 w-24 md:h-32 md:w-32 bg-slate-950 rounded-full border-4 border-slate-900 flex items-center justify-center text-4xl md:text-5xl">
           👨‍💻
         </div>
       </div>
 
-      {/* 2. BAŞLIK */}
+      {/* 2. BAŞLIK (İSİM) */}
       <h1 className="mb-4 text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
         <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
           {t('title')}
         </span>
       </h1>
 
-      {/* 3. ALT BAŞLIK */}
+      {/* 3. ALT BAŞLIK (UNVAN) */}
       <h2 className="mb-6 text-xl md:text-2xl font-medium text-slate-200">
         {t('subtitle')}
       </h2>
@@ -33,14 +41,36 @@ export default function Hero() {
         {t('description')}
       </p>
 
-      {/* 4. BUTONLAR */}
+      {/* 4. BUTONLAR (CV İNDİR DROPDOWN EKLENDİ) */}
       <div className="flex flex-col sm:flex-row gap-4 mb-12">
-        <a href={siteConfig.links.resume} target="_blank" rel="noreferrer">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-none shadow-lg shadow-purple-500/20 rounded-full px-8">
-            <Download className="mr-2 h-4 w-4" />
-            {t('downloadBtn')}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-none shadow-lg shadow-purple-500/20 rounded-full px-8 cursor-pointer">
+              <Download className="mr-2 h-4 w-4" />
+              {t('downloadBtn')}
             </Button>
-        </a>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="center" className="bg-slate-900 border-slate-800 text-slate-200 rounded-xl min-w-[160px]">
+            <DropdownMenuItem className="hover:bg-slate-800 cursor-pointer focus:bg-slate-800 focus:text-white">
+              <a 
+                href="/cv/Burak_Talha_Memis_CV_TR.pdf" 
+                download 
+                className="flex w-full px-2 py-2 items-center justify-center"
+              >
+                Türkçe (TR)
+              </a>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-slate-800 cursor-pointer focus:bg-slate-800 focus:text-white">
+              <a 
+                href="/cv/Burak_Talha_Memis_CV_EN.pdf" 
+                download 
+                className="flex w-full px-2 py-2 items-center justify-center"
+              >
+                English (EN)
+              </a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
 
         <Button variant="outline" size="lg" asChild className="rounded-full px-8 border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white">
           <a href="#projects">
@@ -62,13 +92,12 @@ export default function Hero() {
         </SocialWrapper>
       </div>
 
-      {/* 6. MOUSE SCROLL İKONU (Düzeltildi) */}
-      {/* absolute bottom-8 diyerek sayfanın en altına çiviledik */}
+      {/* 6. MOUSE SCROLL İKONU */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-slate-500 hidden md:block">
         <a href="#skills" className="flex flex-col items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
             <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
             <div className="w-6 h-10 border-2 border-slate-500 rounded-full flex justify-center p-1">
-                <div className="w-1 h-2 bg-slate-500 rounded-full animate-scroll"></div>
+                <div className="w-1 h-2 bg-slate-500 rounded-full"></div>
             </div>
         </a>
       </div>
