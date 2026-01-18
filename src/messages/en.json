@@ -48,7 +48,7 @@
     "education": "Education",
     "contact": "Contact"
   },
-"Education": {
+  "Education": {
     "title": "Education & Certifications",
     "subtitle": "My academic background and professional continuous learning.",
     "degree": {
@@ -106,15 +106,22 @@
   },
   "Contact": {
     "title": "Get In Touch",
-    "subtitle": "Let's collaborate on your next project.",
+    "subtitle": "Feel free to reach out for projects or job opportunities.",
     "infoTitle": "Contact Information",
+    "labels": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
     "openToWork": {
       "title": "Open to Opportunities",
-      "text": "I am currently seeking full-time opportunities in Computer Engineering, Full Stack Development, or Mobile Apps."
+      "text": "I am currently seeking full-time opportunities in Computer Engineering and Full Stack Development."
     },
     "form": {
+      "successMessage": "Your message has been sent successfully! 🚀",
+      "errorMessage": "An error occurred while sending the message. Please try again. ❌",
+      "connectionError": "Could not connect to the server. Please check your connection. 🌐",
       "name": "Your Name",
-      "email": "Your Email",
       "message": "Your Message...",
       "btn": "Send Message"
     }

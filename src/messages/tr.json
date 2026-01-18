@@ -48,7 +48,7 @@
     "education": "Eğitim",
     "contact": "İletişim"
   },
-"Education": {
+  "Education": {
     "title": "Eğitim & Sertifikalar",
     "subtitle": "Akademik geçmişim ve profesyonel gelişim yolculuğum.",
     "degree": {
@@ -108,13 +108,20 @@
     "title": "İletişime Geç",
     "subtitle": "Projeleriniz veya iş fırsatları için benimle irtibata geçebilirsiniz.",
     "infoTitle": "İletişim Bilgileri",
+    "labels": {
+      "email": "E-posta",
+      "phone": "Telefon",
+      "location": "Konum"
+    },
     "openToWork": {
       "title": "Yeni Fırsatlara Açığım",
-      "text": "Şu anda Bilgisayar Mühendisliği, Full Stack Geliştirme veya Mobil Uygulama alanlarında tam zamanlı fırsatları değerlendiriyorum."
+      "text": "Şu anda Bilgisayar Mühendisliği ve Full Stack Geliştirme alanlarında tam zamanlı fırsatları değerlendiriyorum."
     },
     "form": {
+      "successMessage": "Mesajınız başarıyla gönderildi! 🚀",
+      "errorMessage": "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin. ❌",
+      "connectionError": "Sunucuya bağlanılamadı. İnternet bağlantınızı kontrol edin. 🌐",
       "name": "Adınız",
-      "email": "E-posta Adresiniz",
       "message": "Mesajınız...",
       "btn": "Mesaj Gönder"
     }
